@@ -1,1 +1,23 @@
 /* futura hoja de estilos*/
+
+@import url('https://fonts.googleapis.com/css2?family=Marcellus+SC&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import './destacados.css';
+
+
+:root {
+    --font-text-title: 'Marcellus SC', serif;
+    --font-text: 'Poppins', sans-serif;
+    --bg-color: #FEFEE3;
+    --bg-color-card: #d3f0ba;
+    --color-primary: #060F0A;
+    --color-secondary: #D68C45;
+    --color-tertiary: #173A26;
+    --color-tertiary-light: #458762;
+    --color-details: #FFC9B9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
