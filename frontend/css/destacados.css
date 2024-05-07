@@ -12,10 +12,10 @@
 }
 
 .section-title {
-    font-size: 32px;
-    font-weight: 700;
-    text-align: start;
-    align-self: self-start;
+    font-size: 26px;
+    font-weight: 600;
+    text-align: left;
+    align-self: flex-start;
     padding: 20px 0 0 150px;
 }
 
@@ -187,6 +187,14 @@
 }
 
 @media screen and (max-width:768px) {
+    .container{
+        padding: 0 10px;
+    }
+    .section-title {
+        text-align: left;
+        font-size: 22px;
+        padding: 10px;
+    }
     .slide-content {
         margin: 0 10px;
     }
@@ -194,4 +202,10 @@
     .swiper-navBtn {
         display: none;
     }
+
+    .caract-container {
+
+        margin-top: 20px;
+    }
 }
+
