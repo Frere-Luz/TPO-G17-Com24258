@@ -10,164 +10,199 @@
     <link rel="stylesheet" href="./css/style.css">
     <!-- swiper link -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!--favicon/logo-->
     <link rel="shortcut icon" href="./assets/logoVivero.png" type="image/x-icon">
 </head>
-        
+
 
 <body>
     <header>
-        <!--Colocar el logo aqui-->
-        <!-- Barra de navegacion -->
+        <div class="nav-container">
+            <!--Colocar el logo aqui-->
+            <div>
+                <img class="logo" src="./assets/logoVivero.png" alt="">
+            </div>
+            <!-- Barra de navegacion -->
+            <div class="nav-list-container">
+                <ul class="list-content">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Ofertas</a></li>
+                    <li><a href="#">Comentarios</a></li>
+                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="#">Tienda</a></li>
+                </ul>
+            </div>
+            <!-- boton de registro/login -->
+            <div class="nav-register-container">
+                <a class="nav-register" href="#">Registro</a>
+                <a class="nav-register" href="#">Login</a>
+            </div>
+        </div>
     </header>
     <main>
-        <section>
-            <!--Destacados-->
-            <div class="container">
-                <div class="section-title">
-                    <h1>Nuestros Destacados</h1>
+        <!--Destacados-->
+        <div class="container-destacados">
+            <div class="section-title">
+                <h1>Nuestros Destacados</h1>
+            </div>
+            <!-- carrusel de plantas -->
+            <div class="slide-container swiper">
+                <div class="slide-content">
+                    <div class="card-wrapper swiper-wrapper">
+                        <!-- tarjeta del carrusel -->
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+                                <div class="card-image">
+                                    <img src="./assets/buganvilla.jpg" alt="" class="card-img">
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h2 class="name-plant">Buganvilla</h2>
+                                <p class="description">De hoja perenne y clima mediterraneo. Deben plantarse al sol
+                                    y no le gustan las heladas.Florece en verano y otoño</p>
+                                <button class="button">Ver Mas</button>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+                                <div class="card-image">
+                                    <img src="./assets/durillo.jpg" alt="" class="card-img">
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h2 class="name-plant">Durillo</h2>
+                                <p class="description">Abusto resistente, anual, con floracion abundante en otoño e
+                                    invierno.Acepta tanto el sol como la semisombra.</p>
+                                <button class="button">Ver Mas</button>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+                                <div class="card-image">
+                                    <img src="./assets/crasa_ovata.jpg" alt="" class="card-img">
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h2 class="name-plant">Crasa Ovata</h2>
+                                <p class="description">De la familia de las suculentas, una planta que requiere
+                                    pocos
+                                    cuidados. Conocida como Arbol de Jade.</p>
+                                <button class="button">Ver Mas</button>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+                                <div class="card-image">
+                                    <img src="./assets/petunia.jpg" alt="" class="card-img">
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h2 class="name-plant">Petunia</h2>
+                                <p class="description">De Argentina. Familia Solanaceas. Prefiere zonas templadas
+                                    protegidas. Florece de primavera a otoño</p>
+                                <button class="button">Ver Mas</button>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+                                <div class="card-image">
+                                    <img src="./assets/sansevieria.jpg" alt="" class="card-img">
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h2 class="name-plant">Sansviera</h2>
+                                <p class="description">Ayuda a oxigenar los ambientes, una planta que requiere pocos
+                                    cuidados. Prefiere los interiores iluminados.</p>
+                                <button class="button">Ver Mas</button>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+                                <div class="card-image">
+                                    <img src="./assets/Xanthosoma.jpg" alt="" class="card-img">
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h2 class="name-plant">Xanthosoma</h2>
+                                <p class="description">De la familia de las Araceae, de origen americano, es una
+                                    herbacea que se cultiva en espacios sombreados o en el interior.</p>
+                                <button class="button">Ver Mas</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <!-- carrusel de plantas -->
-                <div class="slide-container swiper">
-                    <div class="slide-content">
-                        <div class="card-wrapper swiper-wrapper">
-                            <!-- tarjeta del carrusel -->
-                            <div class="card swiper-slide">
-                                <div class="image-content">
-                                    <span class="overlay"></span>
-                                    <div class="card-image">
-                                        <img src="./assets/buganvilla.jpg" alt="" class="card-img">
-                                    </div>
-                                </div>
-                                <div class="card-content">
-                                    <h2 class="name-plant">Buganvilla</h2>
-                                    <p class="description">De hoja perenne y clima mediterraneo. Deben plantarse al sol
-                                        y no le gustan las heladas.Florece en verano y otoño</p>
-                                    <button class="button">Ver Mas</button>
-                                </div>
-                            </div>
-                            <div class="card swiper-slide">
-                                <div class="image-content">
-                                    <span class="overlay"></span>
-                                    <div class="card-image">
-                                        <img src="./assets/durillo.jpg" alt="" class="card-img">
-                                    </div>
-                                </div>
-                                <div class="card-content">
-                                    <h2 class="name-plant">Durillo</h2>
-                                    <p class="description">Abusto resistente, anual, con floracion abundante en otoño e
-                                        invierno.Acepta tanto el sol como la semisombra.</p>
-                                    <button class="button">Ver Mas</button>
-                                </div>
-                            </div>
-                            <div class="card swiper-slide">
-                                <div class="image-content">
-                                    <span class="overlay"></span>
-                                    <div class="card-image">
-                                        <img src="./assets/crasa_ovata.jpg" alt="" class="card-img">
-                                    </div>
-                                </div>
-                                <div class="card-content">
-                                    <h2 class="name-plant">Crasa Ovata</h2>
-                                    <p class="description">De la familia de las suculentas, una planta que requiere
-                                        pocos
-                                        cuidados. Conocida como Arbol de Jade.</p>
-                                    <button class="button">Ver Mas</button>
-                                </div>
-                            </div>
-                            <div class="card swiper-slide">
-                                <div class="image-content">
-                                    <span class="overlay"></span>
-                                    <div class="card-image">
-                                        <img src="./assets/petunia.jpg" alt="" class="card-img">
-                                    </div>
-                                </div>
-                                <div class="card-content">
-                                    <h2 class="name-plant">Petunia</h2>
-                                    <p class="description">De Argentina. Familia Solanaceas. Prefiere zonas templadas
-                                        protegidas. Florece de primavera a otoño</p>
-                                    <button class="button">Ver Mas</button>
-                                </div>
-                            </div>
-                            <div class="card swiper-slide">
-                                <div class="image-content">
-                                    <span class="overlay"></span>
-                                    <div class="card-image">
-                                        <img src="./assets/sansevieria.jpg" alt="" class="card-img">
-                                    </div>
-                                </div>
-                                <div class="card-content">
-                                    <h2 class="name-plant">Sansviera</h2>
-                                    <p class="description">Ayuda a oxigenar los ambientes, una planta que requiere pocos
-                                        cuidados. Prefiere los interiores iluminados.</p>
-                                    <button class="button">Ver Mas</button>
-                                </div>
-                            </div>
-                            <div class="card swiper-slide">
-                                <div class="image-content">
-                                    <span class="overlay"></span>
-                                    <div class="card-image">
-                                        <img src="./assets/Xanthosoma.jpg" alt="" class="card-img">
-                                    </div>
-                                </div>
-                                <div class="card-content">
-                                    <h2 class="name-plant">Xanthosoma</h2>
-                                    <p class="description">De la familia de las Araceae, de origen americano, es una
-                                        herbacea que se cultiva en espacios sombreados o en el interior.</p>
-                                    <button class="button">Ver Mas</button>
-                                </div>
-                            </div>
-                        </div>
+                <!-- botones del carrusel -->
+                <div class="swiper-button-next swiper-navBtn"></div>
+                <div class="swiper-button-prev swiper-navBtn"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <!-- subseccion caracteristicas -->
+            <div class="caract-container">
+                <div class="caracteristicas">
+                    <div class="imagen-caract">
+                        <img class="img-caract" src="./assets/icons8-in-transit-100.png" alt="">
                     </div>
-                    <!-- botones del carrusel -->
-                    <div class="swiper-button-next swiper-navBtn"></div>
-                    <div class="swiper-button-prev swiper-navBtn"></div>
-                    <div class="swiper-pagination"></div>
+                    <span>
+                        <p class="caract-title"><strong>Envios a domicilio</strong></p>
+                        <p class="caract-content">Nos comunicaremos para coordinar con vos la entrega. Envios gratis
+                            en CABA.</p>
+                    </span>
                 </div>
-                <!-- subseccion caracteristicas -->
-                <div class="caract-container">
-                    <div class="caracteristicas">
-                        <div class="imagen-caract">
-                            <img class="img-caract" src="./assets/icons8-in-transit-100.png" alt="">
-                        </div>
-                        <span>
-                            <p class="caract-title"><strong>Envios a domicilio</strong></p>
-                            <p class="caract-content">Nos comunicaremos para coordinar con vos la entrega. Envios gratis
-                                en CABA.</p>
-                        </span>
+                <div class="caracteristicas">
+                    <div class="imagen-caract">
+                        <img class="img-caract" src="./assets/icons8-ringer-volume-100.png" alt="">
                     </div>
-                    <div class="caracteristicas">
-                        <div class="imagen-caract">
-                            <img class="img-caract" src="./assets/icons8-ringer-volume-100.png" alt="">
-                        </div>
-                        <span>
-                            <p class="caract-title"><strong>Asesoramiento</strong></p>
-                            <p class="caract-content">Contas con nosotros para encontrar la planta que va
-                                mejor
-                                con vos</p>
-                        </span>
+                    <span>
+                        <p class="caract-title"><strong>Asesoramiento</strong></p>
+                        <p class="caract-content">Contas con nosotros para encontrar la planta que va
+                            mejor
+                            con vos</p>
+                    </span>
+                </div>
+                <div class="caracteristicas">
+                    <div class="imagen-caract">
+                        <img class="img-caract" src="./assets/icons8-online-support-100.png" alt="">
                     </div>
-                    <div class="caracteristicas">
-                        <div class="imagen-caract">
-                            <img class="img-caract" src="./assets/icons8-online-support-100.png" alt="">
-                        </div>
-                        <span>
-                            <p class="caract-title"><strong>PostVenta</strong></p>
-                            <p class="caract-content">Te quedaron dudas? Estamos para ayudarte</p>
-                        </span>
-                    </div>
+                    <span>
+                        <p class="caract-title"><strong>PostVenta</strong></p>
+                        <p class="caract-content">Te quedaron dudas? Estamos para ayudarte</p>
+                    </span>
                 </div>
             </div>
-        </section>
-        <section>
-            <!--Ofertas-->
-        </section>
-        <section>
-            <!--Fotos de red social-->
-        </section>
-
+        </div>
     </main>
-    <footer>
+    <footer class="footer-container">
         <!-- place footer here -->
+        <div class="footer-logo-container">
+            <div class="footer-logo">
+                <img src="./assets/logoVivero.png" alt="">
+            </div>
+            <div class="footer-location">
+                <p>visitenos en</p>
+                <p>magnolia 342</p>
+                <p>vicente lopez,CP 1638</p>
+                <p>(11)6543-2109 / (11)6789-0123</p>
+                <a href="#">elalegreplantinvivero.com</a>
+            </div>
+        </div>
+        <div class="footer-media-container">
+            <div class="footer-media">
+                <a href="#"><img class="img-fb" src="./assets/logoFacebookVivero.png" alt=""></a>
+                <a href="#"><img src="./assets/logoInstagramVivero.png" alt=""></a>
+                <a href="#"><img src="./assets/logoWhatsappVivero.png" alt=""></a>
+
+            </div>
+            <div class="footer-copyright-container">
+                <img class="c-circle" src="./assets/copyrightIcon.svg" alt="">
+                <p>todos los derechos reservados</p>
+            </div>
+        </div>
     </footer>
     <!--scripts here-->
 
