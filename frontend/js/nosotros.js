@@ -31,9 +31,9 @@ document.getElementById("footer").innerHTML= `
       </div>
       <div class="footer-location">
           <p>visitenos en</p>
-          <p>342 magnolia street</p>
-          <p>pasadena,ca. 91105</p>
-          <p>(837)8271 9811 / (918)9827 9834</p>
+          <p>Av. Hipólito Yrigoyen s/n, C1087</p>
+          <p>Cdad. Autónoma de Buenos Aires</p>
+          <p>(011)8271 9811 / (011)9827 9834</p>
           <a href="#">elalegreplantinvivero.com</a>
       </div>
   </div>
