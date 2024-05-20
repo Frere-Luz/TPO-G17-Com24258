@@ -48,6 +48,7 @@ h4 {
   flex-direction: column;
   margin: auto;
   justify-content: center;
+  padding: 6rem 0;
 }
 
 .img-container {
