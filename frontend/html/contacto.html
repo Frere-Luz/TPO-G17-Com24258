@@ -1,151 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>El Alegre Plantín - Contacto</title>
-  <!-- css boostrap -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <!-- css -->
-  <link rel="stylesheet" href="../css/contacto.css">
-  <!--favicon/logo-->
-  <link rel="shortcut icon" href="../assets/logoVivero.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Alegre Plantín - Contacto</title>
+    <!-- css boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- css -->
+    <link rel="stylesheet" href="../css/contacto.css">
+    <!--favicon/logo-->
+    <link rel="shortcut icon" href="../assets/logoVivero.png" type="image/x-icon">
 </head>
 
 <body>
+    <header>
+        <!-- navbar con BS -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <img class="logo" src="../assets/logoVivero.png" alt="logo_vivero">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./html/ofertas.html">Ofertas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./html/comentario.html">Comentarios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./html/nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="./html/tienda.html" aria-disabled="true">Tienda</a>
+                        </li>
+                    </ul>
+                    <div class="nav-register-container">
+                        <button type="button" class="btn">  <a href="./html/registro.html" target="_blank" rel="noopener noreferrer">Registro</a></button>
+                        <button type="button" class="btn">  <a href="./html/login.html" target="_blank" rel="noopener noreferrer">Login</a></button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-  <header>
-    <div class="nav-container">
-        <!--Colocar el logo aqui-->
-        <div>
-            <img class="logo" src="../assets/logoVivero.png" alt="">
+    <div class="container main-container">
+        <h1>¡Preguntanos lo que quieras!</h1>
+
+        <div class="banner-container">
+            <img src="../assets/pexels-leigh-patrick-29824688.jpg" class="img-fluid"
+                alt="Margarita del Cabo (Dimorphotheca ecklonis) de varios colores.">
         </div>
-        <!-- Barra de navegacion -->
-        <div class="nav-list-container">
-            <ul class="list-content">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Ofertas</a></li>
-                <li><a href="#">Comentarios</a></li>
-                <li><a href="#">Nosotros</a></li>
-                <li><a href="#">Tienda</a></li>
-            </ul>
-        </div>
-        <!-- boton de registro/login -->
-        <div class="nav-register-container">
-            <a class="nav-register" href="#">Registro</a>
-            <a class="nav-register" href="#">Login</a>
-        </div>
+
+            <div class="col">
+                <form class="row needs-validation" novalidate>
+                    <!-- nombre-->
+                    <div class="col-md-6">
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <input type="text" class="form-control mb-3" id="nombre" placeholder="Juana*" required>
+                        <div class="invalid-feedback">
+                            Por favor, ingresá tu nombre.
+                        </div>
+                    </div>
+
+                    <!-- email-->
+                    <div class="col-md-6">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control mb-3" id="email" placeholder="juana@ejemplo.com*" required>
+                        <div class="invalid-feedback">
+                            Por favor, ingresá un correo.
+                        </div>
+                    </div>
+
+                    <!-- telefono -->
+                    <div class="col-md-6">
+                        <label for="telefono" class="form-label">Teléfono</label>
+                        <input type="number" class="form-control mb-3" id="telefono">
+                    </div>
+
+                    <!-- asunto -->
+                    <div class="col">
+                    <label for="asunto" class="form-label">Asunto</label>
+                    <select class="form-select" id="asunto" required>
+                        <option value="" disabled selected hidden>Selecciona una opción...</option>
+                        <option value="especial">Quiero hacer un pedido especial</option>
+                        <option value="consejos">Necesito consejos para cuidar una planta</option>
+                        <option value="opinion">Quiero dejar una opinión</option>
+                        <option value="problema">Tuve un problema con la compra</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                    <div class="invalid-feedback">
+                        Por favor, selecciona una opción.
+                    </div>
+                    </div>
+
+                    <!-- mensaje -->
+                    <div class="col-12 mb-4">
+                        <label for="mensaje" class="form-label">Mensaje</label>
+                        <textarea class="form-control" id="mensaje" style="height: 180px;" placeholder="Tu mensaje*"
+                            required></textarea>
+                        <div class="invalid-feedback">
+                            Por favor, dejá tu mensaje.
+                        </div>
+                    </div>
+
+                    <!-- suscribirse -->
+                    <fieldset class="form-group">
+                        <legend class="col-form-label pt-0">¡Suscribite a nuestro boletín de noticias!</legend>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="suscribirse" id="opcionSi" value="option1" checked>
+                            <label class="form-check-label " for="gridRadios1">
+                                ¡Claro!
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="suscribirse" id="opcionNo" value="option2">
+                            <label class="form-check-label" for="gridRadios2">
+                                No, gracias.
+                            </label>
+                        </div>
+                    </fieldset>
+
+                    <!-- boton enviar -->
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-success btn-enviar mt-3">Enviar</button>
+                    </div>
+                </form>
+            </div>
     </div>
-</header>
 
-
-
-  <div class="container">
-
-    <h1>¡Preguntanos lo que quieras!</h1>
-
-    <div class="banner-container">
-      <img src="../assets/pexels-leigh-patrick-29824688.jpg" class="img-fluid" alt="Responsive image">
-    </div>
-    <!-- <div class="col-6"> -->
-    <form>
-  <!-- nombre & email-->
-        <div class="form-row">
-          <div class="form-group col-md-6">
-            <label for="nombre">Nombre</label>
-            <input type="text" class="form-control" id="nombre" placeholder="John Doe*" required>
-          </div>
-                                        <!-- <div class="form-row"> -->
-          <div class="form-group col-md-6">
-            <label for="inputEmail4">Email</label>
-            <input type="email" class="form-control" id="inputEmail4" placeholder="Email*" required>
-          </div>
-        </div>
-
-
-  <!-- telefono -->
-        <div class="form-row">
-          <div class="form-group col-md-6">
-            <label for="telefono">Teléfono</label>
-            <input type="number" class="form-control" id="telefono">
-          </div>
-
-  <!-- asunto -->
-            <div class="form-group col-md-6">
-              <label for="asunto">Asunto</label>
-              <select class="form-control" id="asunto" required>
-                <option selected>Selecciona una opción...</option>
-                <option>Quiero hacer un pedido especial</option>
-                <option>Necesito consejos para cuidar una planta</option>
-                <option>Quiero dejar una opinión</option>
-                <option>Tuve un problema con la compra</option>
-                <option>Otro</option>
-              </select>
+    <footer class="footer-container">
+        <!-- place footer here -->
+        <div class="footer-logo-container">
+            <div class="footer-logo">
+                <img class="footer-logo" src="../assets/logoVivero.png" alt="">
+            </div>
+            <div class="footer-location">
+                <p>visitenos en</p>
+                <p>Av.Hipolito Yrigoyen s/n,</p>
+                <p>(1087) C. Autonoma de Buenos Aires,</p>
+                <p>(11)4321-5678/(11)5678-11234</p>
+                <a href="#">elalegreplantinvivero.com</a>
             </div>
         </div>
-        
-  <!-- mensaje -->
-        <div class="form-group">
-          <label for="mensaje">Mensaje</label>
-          <textarea class="form-control" id="mensaje" rows="5" placeholder="*" required></textarea>
+        <div class="footer-media-container">
+            <div class="footer-media">
+                <a href="#"><img class="img-fb" src="../assets/logoFacebookVivero.png" alt="Facebook"></a>
+                <a href="#"><img src="../assets/logoInstagramVivero.png" alt="Instagram"></a>
+                <a href="#"><img src="../assets/logoWhatsappVivero.png" alt="Whatsapp"></a>
+
+            </div>
+            <div class="footer-copyright-container">
+                <img class="c-circle" src="../assets/copyrightIcon.svg" alt="icono_copyright">
+                <p>todos los derechos reservados</p>
+            </div>
         </div>
+    </footer>
 
-  <!-- suscribirse -->
-        <fieldset class="form-group">
-          <!-- <div class="row"> -->
-            <legend class="col-form-label pt-0">¡Suscribite a nuestro newletter!</legend>
-            <!-- <div class="col-sm-10"> -->
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="suscribirse" id="opcionSi" value="option1" checked>
-                <label class="form-check-label " for="gridRadios1">
-                  ¡Claro!
-                </label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="suscribirse" id="opcionNo" value="option2">
-                <label class="form-check-label" for="gridRadios2">
-                  No, gracias.
-                </label>
-              </div>
-            <!-- </div> -->
-          <!-- </div> -->
-        </fieldset>
-
-  <!-- boton enviar -->
-      <button type="submit" class="btn btn-success btn-enviar">Enviar</button>
-
-    </form>
-    <!-- </div> -->
-  </div>
-
-
-
-  <footer class="footer-container">
-    <div class="footer-logo-container">
-        <div class="footer-logo">
-            <img src="../assets/logoVivero.png" alt="">
-        </div>
-        <div class="footer-location">
-            <p>visitenos en</p>
-            <p>Av. Hipólito Yrigoyen s/n, C1087</p>
-            <p>Cdad. Autónoma de Buenos Aires</p>
-            <p>(011)8271 9811 / (011)9827 9834</p>
-            <a href="#">elalegreplantinvivero.com</a>
-        </div>
-    </div>
-    <div class="footer-media-container">
-        <div class="footer-media">
-            <a href="#"><img class="img-fb" src="../assets/logoFacebookVivero.png" alt=""></a>
-            <a href="#"><img src="../assets/logoInstagramVivero.png" alt=""></a>
-            <a href="#"><img src="../assets/logoWhatsappVivero.png" alt=""></a>
-
-        </div>
-        <div class="footer-copyright-container">
-            <img class="c-circle" src="../assets/copyrightIcon.svg" alt="">
-            <p>todos los derechos reservados</p>
-        </div>
-    </div>
-</footer>
+    <!--scripts here-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+    <!-- validation js -->
+    <script src="../js/contacto.js"></script>   
 
 </body>
+
 </html>
