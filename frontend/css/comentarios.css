@@ -1,5 +1,5 @@
-@import "./style.css";
 
+@import "../css/navFooter.css";
 h1 {
     text-align: center;
     font-family: var(--font-text-title);
@@ -38,6 +38,7 @@ h1 {
     font-size: 6rem;
     color: var(--color-secondary);
     opacity: .3;
+    
 }
 
 .caja_padre .caja .usuario img {
@@ -68,3 +69,32 @@ h1 {
     padding: 1rem;
     font-family: var(--font-text);
 }
+
+
+
+
+@media only screen and (max-width: 520px){
+
+    .caja_padre .caja .fa-comment-dots{
+        position: absolute;
+        top: 0.5rem;
+        right: 1rem;
+        font-size: 3rem;
+
+    }
+
+    .caja_padre .caja .usuario .estrellas i{
+
+        font-size: 12px;
+    }
+
+
+
+    
+
+    
+
+
+
+}
+
