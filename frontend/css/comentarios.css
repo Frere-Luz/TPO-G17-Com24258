@@ -1,0 +1,100 @@
+
+@import "../css/navFooter.css";
+h1 {
+    text-align: center;
+    font-family: var(--font-text-title);
+    color: var(--color-secondary);
+}
+
+
+.caja_padre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+
+
+.caja_padre .caja {
+    background-color: var(--bg-color);
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+    border: .1rem solid rgba(0, 0, 0, .2);
+     box-shadow: 0.5rem 1rem rgba(0, 0, 0, .1); /*La propiedad CSS box-shadow añade efectos de sombra alrededor del marco de un elemento */
+    flex: 1 1 30rem;
+    border-radius: 0.5rem;
+
+
+}
+
+.caja_padre .caja .fa-comment-dots {
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+    font-size: 6rem;
+    color: var(--color-secondary);
+    opacity: .3;
+    
+}
+
+.caja_padre .caja .usuario img {
+    width: 15rem;
+    height: 15rem;
+    object-fit: cover; /* indica cómo el contenido de un elemento reemplazado, por ejemplo un <img> o <video> , debería redimensionarse para ajustarse a su contenedor*/
+    border-radius: 60%;
+    margin-top: 2rem;
+
+
+}
+
+.caja_padre .caja .usuario h3 {
+    color: var(--color-secondary);
+    font-size: 2rem;
+}
+
+.caja_padre .caja .usuario .estrellas i {
+    color: var(--color-secondary);
+    font-size: 1.5rem;
+    padding: 1rem;
+
+}
+
+.caja_padre .caja .usuario .comentario {
+    color: var(--color-tertiary);
+    font-size: 1.5rem;
+    padding: 1rem;
+    font-family: var(--font-text);
+}
+
+
+
+
+@media only screen and (max-width: 520px){
+
+    .caja_padre .caja .fa-comment-dots{
+        position: absolute;
+        top: 0.5rem;
+        right: 1rem;
+        font-size: 3rem;
+
+    }
+
+    .caja_padre .caja .usuario .estrellas i{
+
+        font-size: 12px;
+    }
+
+
+
+    
+
+    
+
+
+
+}
+

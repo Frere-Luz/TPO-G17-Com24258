@@ -5,6 +5,8 @@
 @import './destacados.css'; 
 
 
+@import "./comentario.css";
+
 
 :root {
     --font-text-title: 'Marcellus SC', serif;
