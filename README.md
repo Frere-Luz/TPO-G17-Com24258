@@ -6,10 +6,10 @@
 Trabajo Practico para Curso Node/JS
 
 Integrantes: 
-Laura Cabrera        https://github.com/laura-cabrera\   
-Luz frere            https://github.com/Frere-Luz\
-Macarena Quipildor   https://github.com/Macarena89\
-Marcos Aquino        https://github.com/Marcos028
+Laura Cabrera        https://github.com/laura-cabrera<br>
+Luz frere            https://github.com/Frere-Luz<br>
+Macarena Quipildor   https://github.com/Macarena89<br>
+Marcos Aquino        https://github.com/Marcos028<br>
 
 Este trabajo es para el curso "Codo a Codo/FullStack/Node.js" comisión 24258
 
