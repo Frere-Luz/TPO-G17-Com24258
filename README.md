@@ -7,7 +7,7 @@ Trabajo Practico para Curso Node/JS
 
 Integrantes: 
 Laura Cabrera        https://github.com/laura-cabrera<br>
-Luz frere            https://github.com/Frere-Luz<br>
+Luz Frere            https://github.com/Frere-Luz<br>
 Macarena Quipildor   https://github.com/Macarena89<br>
 Marcos Aquino        https://github.com/Marcos028<br>
 
