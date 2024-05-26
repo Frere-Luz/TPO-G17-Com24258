@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus+SC&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import './destacados.css';
+
+
+:root {
+    --font-text-title: 'Marcellus SC', serif;
+    --font-text: 'Poppins', sans-serif;
+    --bg-color: #FEFEE3;
+    --bg-color-card: #d3f0ba;
+    --color-primary: #060F0A;
+    --color-secondary: #D68C45;
+    --color-tertiary: #173A26;
+    --color-tertiary-light: #458762;
+    --color-details: #FFC9B9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color) !important;
+    font-family: var(--font-text-title) !important;
+}
+
+
+
+.contenedor-oferta {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+
+
+h1 {
+    font-weight: bold !important;
+    text-align: left;
+    padding: 20px 20px;
+    font-size: 65px !important;
+}
+
+.contenero-tarjeta-text {
+    padding: 20px 20px;
+    display: flex;
+
+}
+
+.contenedor-tarjeta {
+    width: 50%;
+
+    display: flex;
+
+}
+
+.card {
+    display: flex;
+    border: 0 !important;
+    width: 50%;
+    margin-right: 20px;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 35px 35px 35px 35px !important;
+    background-color: var(--color-tertiary-light) !important;
+
+}
+
+.card-img{
+    padding: 20px 20px;
+}
+
+
+.card img {
+    width: auto;
+    height: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    max-width: 100%;
+    border-radius: 50%;
+    border: 5px solid var(--color-secondary);
+}
+
+
+
+.card-info {
+    background-color: var(--bg-color-card) !important;
+    border-radius: 0px 35px 35px 35px;
+    flex-grow: 1;
+    flex-shrink: 1;
+
+}
+
+
+.card-info h2 {
+    font-weight: bold !important;
+
+    padding-top: 20px;
+}
+
+.text {
+    width: 50%;
+    margin: 20px;
+}
+
+.text h2 {
+    font-weight: bold !important;
+    text-align: right;
+    font-size: 53px !important;
+
+}
+
+.card-info p {
+    color: var(--color-primary);
+    padding: 20px 20px 20px 20px !important;
+    font-size: 25px;
+
+}
+
+
+
+button {
+    width: 90px;
+    height: 40px;
+    margin: 20px 20px !important;
+    background-color: #FF8000;
+    border: none;
+    border-radius: 5px !important;
+
+}
+
+
+
+
+.descripcion {
+    display: flex;
+    background-color: #d3f0ba;
+
+    font-style: var(--color-tertiary);
+    font-size: 30px;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+@media (min-width: 320px) and (max-width: 769px) {
+
+    .contenedor-oferta {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+
+    }
+
+    .contenero-tarjeta-text {
+        display: flex;
+        flex-direction: column-reverse;
+
+    }
+
+    .contenedor-tarjeta {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        display: flex;
+        height: 0%;
+
+
+    }
+
+    h1 {
+        font-weight: bold !important;
+
+        text-align: left;
+        padding: 20px 20px;
+        font-size: 45px !important;
+    }
+
+    .card {
+        margin-right: 0%;
+        margin-bottom: 20px;
+        width: 100%;
+        border: 0 !important;
+    }
+
+    .card img {
+
+        margin-top: 25px;
+        margin-bottom: 25px;
+        width: 200px;
+        max-width: 1200%;
+        border-radius: 50%;
+        aspect-ratio: 1 / 1;
+        border: 5px solid var(--color-secondary);
+        object-fit: contain;
+        background-color: rgb(255, 255, 255);
+    }
+
+    .text {
+        width: 100%;
+        margin: 0%;
+        padding-bottom: 20px;
+
+    }
+
+    .card-info p {
+
+        font-size: 25px;
+    }
+
+
+    .text h2 {
+
+        font-weight: bolder;
+        text-align: center;
+        flex-direction: column;
+        font-size: 35px !important;
+    }
+
+    .descripcion {
+        font-size: 25px;
+        padding: 20px;
+    }
+
+}
+
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .contenero-tarjeta-text {
+        padding: 20px 20px;
+        display: flex;
+        flex-direction: column-reverse;
+
+
+
+    }
+
+    .contenedor-tarjeta {
+        width: 100%;
+        display: flex;
+        
+    }
+
+
+    .card {
+        margin-bottom: 20px;
+    }
+
+
+    .card img {
+        width: 100%;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        width: 200px;
+        max-width: 1200%;
+        border-radius: 50%;
+        border: 5px solid var(--color-secondary);
+        
+
+    }
+
+
+    .text {
+        width: 100%;
+
+    }
+
+    .text h2 {
+        text-align: center;
+    }
+
+    .descripcion {
+        font-size: 30px;
+        padding: 20px;
+
+    }
+
+}
+
+
