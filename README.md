@@ -1,6 +1,7 @@
 # TPO-G17-Com24258
+![alt text](https://main--elalegreplantinvivero.netlify.app/assets/logoVivero.png)
 
-<img class="logo" src="../assets/logoVivero.png" alt="logo_vivero">
+
 
 Trabajo Practico para Curso Node/JS
 
